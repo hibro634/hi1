@@ -26,4 +26,10 @@ def cute_analog_clock():
 
     while True:
         current_time = time.localtime()
-        clock_img = draw_clock(current_time.tm_hour, current_time.tm_min, current_time.t
+        clock_img = draw_clock(current_time.tm_hour, current_time.tm_min, current_time.tm_sec)
+        st.image(clock_img, use_container_width=True)
+        time.sleep(1)
+        st.empty()
+
+if __name__ == "__main__":
+    cute_analog_clock()
