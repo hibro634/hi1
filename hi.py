@@ -1,13 +1,10 @@
 import streamlit as st
 
-st.header('Supra')
-st.write('Supra')
+st.header('Supra Video')
+st.write('Watch the Toyota Supra in action!')
 
-# Use a valid image URL
-image_url = 'https://i.pinimg.com/736x/8e/eb/e1/8eebe11cec68e1d4732e71e3f0411cc2.jpg'
+# Use a valid video URL
+video_url = 'https://www.youtube.com/shorts/bk19fJ2yzw8?app=desktop'
 
-# Display the image with a caption
-st.image(image_url, caption='Toyota Supra')
-
-# You can also add alternative text for accessibility
-# st.image(image_url, caption='Toyota Supra', alt='Toyota Supra Image')
+# Display the video
+st.video(video_url)
