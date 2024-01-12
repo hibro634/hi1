@@ -1,4 +1,4 @@
 import streamlit as st
-st.header('Naruto and hinata')
-st.write('Naruto and hinata')
-st.image('https://dailyanimeart.com/2012/12/27/naruto-and-hinata-fight-toghether-naruto-615/',caption='Naruto and hinata')
+st.header('supra')
+st.write('supra')
+st.image('https://www.ronbrooks.co.uk/history-and-evolution-of-the-toyota-supra/',caption='supra')
