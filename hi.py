@@ -1,7 +1,7 @@
 import streamlit as st
 
-st.header('Supra Video')
-st.write('Watch the Toyota Supra in action!')
+st.header('Narito Intro')
+st.write('Narito Intro')
 
 # Use a valid video URL
 video_url = 'https://youtu.be/ZtkgNfC9exI?si=Nexa5W62_TqvD4PV'
