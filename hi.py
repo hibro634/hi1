@@ -7,10 +7,36 @@ def cute_beautiful_clock():
 
     while True:
         current_time = datetime.now().strftime("%H:%M:%S")
-        st.markdown(
-            f'<div style="font-size: 48px; color: #ff69b4; text-align: center;">{current_time}</div>',
-            unsafe_allow_html=True
-        )
+        
+        # CSS for circular clock
+        clock_style = """
+            <style>
+                .clock {
+                    width: 200px;
+                    height: 200px;
+                    background-color: #f8f8f8;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 24px;
+                    color: #ff69b4;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+            </style>
+        """
+
+        # HTML for circular clock
+        clock_html = f"""
+            <div class="clock">
+                {current_time}
+            </div>
+        """
+
+        # Display clock
+        st.markdown(clock_style, unsafe_allow_html=True)
+        st.markdown(clock_html, unsafe_allow_html=True)
+
         time.sleep(1)
         st.empty()
 
